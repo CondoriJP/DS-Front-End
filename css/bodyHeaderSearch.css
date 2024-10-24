@@ -1,0 +1,96 @@
+/*
+ *  Estilos para el buscador de la cabecera de la página
+ *  Autor:  @Condori Juan
+ *  /bodyHeaderSearch.css
+ */
+
+header {
+    background-color: #1784f2 
+}
+
+.contenedorV {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorH {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.headercontenedorInicial {
+    display: grid;
+    padding: 5px 0px 5px 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 56px;
+}
+
+.barraBusqueda {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.agregarElemento {
+    grid-column: 3/3;
+    display: flex;
+    flex-direction: row;
+    justify-content:right;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.headerButton {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.headerButton:hover {
+    cursor: pointer;
+    background: #52a0ee;
+}
+
+.materialIcons {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    font-size: 1rem;
+    padding-left: 2.5px;
+}
+
+.texto1 {
+    color: white;
+    font-size: 1rem;
+    display: inline-block;
+    margin: 0;
+}
+
+.alianecionTexto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerInput {
+    border: 1px solid white;
+    border-radius: 26px;
+    text-align: center;
+    width: 300px;
+    height:28px;
+    outline: none;
+    text-align: left;
+    padding-left: 10px;
+}
