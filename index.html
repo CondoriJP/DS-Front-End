@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>DS Front End</title>
+        <!-- CSS -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/bodyHeaderSearch.css" rel="stylesheet">
+        <link href="css/bodyMain.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        
+        <!-- Material Icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header">
+            <div id="headerSearch">
+                <div class="headercontenedorInicial">
+                    <div class="barraBusqueda">
+                        <div>
+                            <input id="headerSearchInputSearch" type="text" class="headerInput" placeholder="Ingrese un elemento">
+                        </div>
+                        <div>
+                            <button id="headerSearchBsearch" class="headerButton">
+                                <h3 class="texto1 alianecionTexto">Buscar
+                                    <span class="materialIcons">
+                                        search
+                                    </span>
+                                </h3>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="agregarElemento">
+                        <button id="headerSearchBagregarelem" class="headerButton">
+                            <h3 class="texto1 alianecionTexto">Agregar Elemento
+                                <span class="materialIcons">add</span>
+                            </h3>
+                        </button>
+                    </div>
+                </div>
+             </div>
+        </header>
+        <!-- Main -->
+        <main id="main">
+            <div class="mainContenedorInicial">
+                <aside class="categorias">
+                    <div class="contenedorH">
+                        <h2 class="texto2 alianecionText">Categorias
+                            <span class="materialIcons iconsMain">tune</span>
+                        </h2>
+                    </div>
+                    <ul id="listFilter" class="listaCategorias"/>
+                </aside>
+                <div id="storeContainer" class="articulos"/>
+            </div>
+            <!-- POPUP -->
+            <div id="modalpopUP" class="popUPContainer__principal">
+                <div class="popUPContainer">
+                    <div class="popUPContainer__header">
+                        <h2>Angregar o Modificar Producto</h2>
+                    </div>
+                    <div class="popUPContainer__body">
+                        <input  id="popUP_nombre" class="popUP__inpText" type="text" placeholder="Ingrese un nombre">
+                        <input id="popUP_precio" class="popUP__inpNumber" type="number" placeholder="Precio">
+                        <select id="popUP_categoria" class="popUP__inpSelect" >
+                            <option>Seleccione una categoria</option>
+                            <option>Gaseosas</option>
+                            <option>Hamburguesas</option>
+                            <option>Papas</option>
+                        </select>
+                        <input id="popUP_img" type="text" class="popUP__inpImg">
+                    </div>
+                    <div class="popUPContainer__footer">
+                        <button id="popUP_ButCancel" class="popUP__Button cancel">
+                            <h2>Cancelar</h2>
+                        </button>
+                        <button id="popUP_ButAccept" class="popUP__Button accept">
+                            <h2>Aceptar</h2>
+                        </button>
+                        <button id="popUP_ButDelete" class="popUP__Button delete">
+                            <h2>Eliminar</h2>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+    <!-- JS -->
+    <script type="module" src="/main.js"></script>
+</html>
+
+<!--
+                            <div class="popUPContainer__formulario__input">
+                                <h3 for="image">Imagen</h3>
+                                <input type="file" id="image" name="image" class="input" />
+                            </div>
+-->
