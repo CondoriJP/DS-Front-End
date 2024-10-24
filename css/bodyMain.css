@@ -337,3 +337,95 @@ h2 {
 .delete:hover {
     background-color: #fe8080
 }
+
+/*=== MEDIA QUERYS ===*/
+@media screen and (max-width: 768px) {
+    .headercontenedorInicial {
+        display: grid;
+        padding: 5px 0px 5px 0px;
+        grid-template-columns: 1fr 0.5fr;
+    }
+
+    .barraBusqueda {
+        grid-column: 1/2;
+    }
+
+    .agregarElemento {
+        grid-column: 2/2;
+    }
+
+    .texto1 {
+        font-size: 0.6rem;
+    }
+    .mainContenedorInicial {
+        grid-template-rows: 1fr 1fr;
+    }
+    .articulos {
+        grid-column: 2/2;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .product__group__list {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .product__item__img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .product__item__info__tittle {
+        font-size: 0.8rem;
+    }
+
+    .product__item__info__description p {
+        font-size: 0.6rem;
+    }
+
+    .popUPContainer {
+        width: 60vw;
+        height: 60vh;
+    }
+
+    .popUPContainer__header h2 {
+        font-size: 3vh;
+    }
+
+    .popUP__inpText {
+        font-size: 2vh;
+    }
+
+    .popUP__inpNumber {
+        font-size: 2vh;
+    }
+
+    .popUP__inpSelect {
+        font-size: 2vh;
+    }
+
+    .popUP__inpImg {
+        font-size: 2vh;
+    }
+
+    .popUP__inpImg[type="file"]::-webkit-file-upload-button {
+        height: 40px;
+        font-size: 2vh;
+    }
+
+    .popUP__Button h2 {
+        font-size: 2vh;
+    }
+}
+
+/*=== SCROLLBAR ===*/
+::-webkit-scrollbar {
+    width: 10px;
+    background: white;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1c6dd8;
+    border-radius: 10px;
+}

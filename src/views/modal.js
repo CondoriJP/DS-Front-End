@@ -1,5 +1,5 @@
 import { setProductActive, productActive } from "../../main";
-import { handleSaveorModify } from "../services/product";
+import { handleSaveorModify, handleDeleteProduct } from "../services/product";
 
 /* === POPUP === */
 const buttonCancel = document.getElementById("popUP_ButCancel");
@@ -12,9 +12,20 @@ buttonAccept.addEventListener("click", () => {
     handleSaveorModify();
 });
 
+const buttonDelete = document.getElementById("popUP_ButDelete");
+buttonDelete.addEventListener("click", () => {
+    handleDeleteProduct();
+});
+
 // Funciones para abrir y cerrar el modal
 export const openModal = () => {
     const modal = document.getElementById("modalpopUP");
+    const buttonDelete = document.getElementById("popUP_ButDelete");
+    if (productActive) {
+        buttonDelete.style.display = "block";
+    } else {
+        buttonDelete.style.display = "none";
+    }
     modal.style.display = "flex";
     if (productActive) {
         const nombre = document.getElementById("popUP_nombre");
