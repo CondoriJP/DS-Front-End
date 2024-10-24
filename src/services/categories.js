@@ -51,6 +51,14 @@ const handleFilterByCategory = (category) => {
             const filterProducts = products.filter((item) => item.categoria === category);
             handleRenderList(filterProducts);
             break;
+        case "mayorPrecio":
+            const filterProductsMax = products.sort((a, b) => b.precio - a.precio);
+            handleRenderList(filterProductsMax);
+            break;
+        case "menorPrecio":
+            const filterProductsMin = products.sort((a, b) => a.precio - b.precio);
+            handleRenderList(filterProductsMin);
+            break;
         default:
             break
 

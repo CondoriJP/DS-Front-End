@@ -1,5 +1,5 @@
 import { setProductActive } from '../../main';
-import { openModal } from '../../main';
+import { openModal } from '../views/modal';
 import { handleGetProductsLocalStorage } from '../persistence/localStorage';
 
 /* === STORE === */
